@@ -28,6 +28,7 @@ if ('caches' in window) {
 
 if (!songIndex) {
   sessionStorage.setItem('songIndex', 0);
+  songIndex = sessionStorage.getItem('songIndex');
 }
 
 fetch(endpoint)
